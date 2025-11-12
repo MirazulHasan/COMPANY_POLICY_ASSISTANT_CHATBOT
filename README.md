@@ -82,7 +82,7 @@ pip install langchain_ollama
 pip install chromadb
 pip install pypdf
 ```
-> Note: Python 3.11+ recommended.
+> Python 3.11+ recommended.
 
 ## 6. Run Ollama Locally
 ```python
@@ -96,7 +96,7 @@ streamlit run policy_chatbot.py
 ```
 Open your browser: http://localhost:8501
 
-# 📁 Usage
+# 📝 Usage
 
 ### 1. Upload Policy Documents
 
@@ -127,9 +127,13 @@ Use the chat input to ask anything like:
 
 # 🧩 Sample Policy Documents (for testing)
 
-- [SHRM Leave Policy (PDF)](https://www.shrm.org/resourcesandtools/tools-and-samples/policies/pages/cms_000302.aspx)
-- [Remote Work Policy (PDF)](https://www.flexjobs.com/blog/wp-content/uploads/2021/03/Remote-Work-Policy-Template.pdf)
-- [SANS IT Acceptable Use (PDF)](https://www.sans.org/media/security-awareness-training/SANS-Security-Policy-Templates.pdf)
+- [Local Initiatives Support Corporation](https://www.lisc.org/media/filer_public/93/dd/93ddc43d-3917-4361-8381-70c1f0a5de54/sample_policy_and_procedures_manual.pdf)
+
+- [Template.net](https://images.template.net/wp-content/uploads/2022/07/Policy-and-Procedure-PDF.pdf)
+
+- [The People in Dairy](https://thepeopleindairy.org.au/wp-content/uploads/2019/02/workplace_policies_procedures_v1.pdf)
+
+- [MD Accountants & Auditors Inc.](https://www.mdacc.co.za/wp-content/uploads/2016/04/04-Policy-Manual-Apr-2016-excl-SAICA.pdf)
 
 # 💡 How it Works
 
@@ -141,18 +145,6 @@ Use the chat input to ask anything like:
 6. **Generate →** LLM answers using only retrieved context
 7. **Cite →** Show source file + page + snippet
 8. **Chat →** Session memory preserved
-
-# 📝 Example Interaction
-
-### User: 
-> What is the company’s leave policy?
-
-### Assistant: 
-> Employees are entitled to 20 days of paid leave annually. Requests must be submitted via HR portal.
-
-### Sources:
-
-- `SHRM_Leave_Policy.pdf` (Page 2)
 
 # 📁 Files
 - `policy_chatbot.py` – Main Streamlit + RAG app
