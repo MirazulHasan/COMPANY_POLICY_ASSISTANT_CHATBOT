@@ -80,6 +80,7 @@ pip install langchain_text_splitters
 pip install langchain_chroma
 pip install langchain_ollama
 pip install chromadb
+pip install pypdf
 ```
 > Note: Python 3.11+ recommended.
 
